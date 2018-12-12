@@ -13,7 +13,8 @@ namespace Ex35_Observer_Pattern
         public int State
         {
             get
-            { return state;
+            {
+                return state;
             }
             set
             {

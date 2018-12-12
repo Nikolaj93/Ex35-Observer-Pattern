@@ -8,6 +8,7 @@ namespace Ex35_Observer_Pattern
 {
     public class Academy
     {
+        List<Student> students = new List<Student>();
         public string Name
         {
             get { return Name; }
@@ -18,6 +19,16 @@ namespace Ex35_Observer_Pattern
         public Academy(string Name)
         {
 
+        }
+
+        public void Attach(Student s1)
+        {
+            
+        }
+
+        public void Detach(Student s2)
+        {
+            
         }
     }
 }
