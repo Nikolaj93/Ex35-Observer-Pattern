@@ -11,7 +11,7 @@ namespace Ex35_Observer_Pattern
         static void Main(string[] args)
         {
             var p = new Academy("UCL");
-
+            
             var s1 = new Student(p, "Jens");
             var s2 = new Student(p, "Niels");
             var s3 = new Student(p, "Susan");

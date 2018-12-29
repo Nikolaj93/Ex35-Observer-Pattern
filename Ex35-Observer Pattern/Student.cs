@@ -8,7 +8,7 @@ namespace Ex35_Observer_Pattern
 {
     public class Student
     {
-        private Academy subject;
+        private Academy academy;
 
         public string Message;
 
@@ -17,12 +17,15 @@ namespace Ex35_Observer_Pattern
             get { return Name; }
             set { Name = value; }
         }
-        public Student(Academy subject, string Name)
+        public Student(Academy _academy, string Name)
         {
-
+            academy = _academy;
+            _name = name;
         }
         public void Update()
         {
+            Message = academy.Message;
+            Console.WriteLine("Studerende " + Name + " fik nyhed " + Message + " fra akademiet " + academy.Name);
         }
     }
 }

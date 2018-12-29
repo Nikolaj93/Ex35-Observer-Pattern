@@ -14,6 +14,9 @@ namespace Ex35_Observer_Pattern
             get { return Name; }
             set { Name = value; }
         }
+
+        public string message { get; internal set; }
+
         public string Message;
 
         public Academy(string Name)
@@ -21,12 +24,12 @@ namespace Ex35_Observer_Pattern
 
         }
 
-        public void Attach(Student s1)
+        public void Attach(Student s)
         {
             
         }
 
-        public void Detach(Student s2)
+        public void Detach(Student s)
         {
             
         }
